@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    line-height: 1.6;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-content {
+    max-width: 500px;
+    .hero-content h1 { 
+    font-size: 3rem; 
+    color: var(--azul-escuro); 
+    margin-bottom: 10px; 
+}
+}
+
+.hero-illustration img {
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    /* animações */
+    animation: fadeInUp 1.5s ease forwards, float 6s ease-in-out infinite;
+    opacity: 0;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* entrada suave */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* flutuação */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* hover */
+.hero-illustration img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1) saturate(1.1);
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrícia Marques | Psicologia Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="logo2.png" alt="Logo Patrícia Marques">
+        <div class="logo-text">
+            <span class="name">Patrícia Marques</span>
+            <small>Psicologia</small>
+        </div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#artigos">Artigos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="https://wa.me/5561982856791" class="btn-nav">Agendar consulta</a></li>
+        </ul>
+    </nav>
+</header>
+        
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Psicologia Online</h1>
+            <p class="hero-tagline">Especialista em <strong>Teoria Cognitivo-Comportamental</strong></p>
+            <p class="hero-description">
+                Você merece ser ouvido com empatia e respeito. No espaço terapêutico que construiremos juntos, 
+                suas dores terão lugar, sem críticas nem julgamentos. Por meio de um cuidado psicológico atento 
+                e de uma relação de confiança, vamos trabalhar para que você encontre alívio, clareza e forças 
+                para lidar com os desafios da sua vida emocional.
+            </p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5561982856791" class="btn-primary">Agende sua consulta</a>
+            </div>
+            <p class="hero-footer-text">Atendimento para Adultos, Casais e Grupos.</p>
+        </div>
+        <img src="flor.png" alt="Ilustração floral decorativa">
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="about-text">
+            <span class="label"></span>
+            <h2>EU SOU</h2>
+            
+            <p>Patrícia Marques, tenho 34 anos, sou psicóloga, mãe, empreendedora e uma eterna aprendiz.</p>
+            
+            <p>Minha história com a Psicologia começou ainda na adolescência, quando tive a sorte de estudar em uma escola que incluía essa disciplina como parte da grade curricular.</p>
+
+            <p>Desde então, nos escolhemos. Em 2017, iniciei minha graduação em Psicologia na Universidade Uniceplac – DF e concluí em 2021, após anos desafiadores marcados pelo início da pandemia de Covid-19, um período de muitas incertezas e aprendizados. Sou pós-graduada em Teoria Cognitivo-Comportamental.</p>
+
+            <p>Sou apaixonada pela profissão que escolhi. Amo poder ser um instrumento de desenvolvimento na vida das pessoas e sou imensamente grata pela ampliação de visão e mundo que a Psicologia me proporcionou.</p>
+
+            <p>Atualmente, atuo com atendimento psicológico online, acolhendo adultos, casais e grupos, sempre com escuta sensível, ética e respeito às singularidades de cada trajetória.</p>
+            
+            <span class="signature">Patrícia Marques</span>
+
+            <div class="features">
+                <div class="feat"><span>✔</span> Escuta ativa</div>
+                <div class="feat"><span>✔</span> Sigilo garantido</div>
+                <div class="feat "><span>✔</span> Acolhimento sem julgamentos</div>
+            </div>
+        </div>
+        <div class="about-image">
+            <div class="blob">
+                <img src="Pat.jpg" alt="Foto Patrícia Marques">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <span class="label"><h1>SERVIÇOS</h1></span>
+        
+        <div class="services-grid">
+            <div class="s-card">
+                <div class="s-img-container">
+                    <img src="individual.png" alt="Atendimento individual">
+                </div>
+                <div class="s-info">
+                    <h3>Atendimento individual online</h3>
+                    <p>Atendimento online individual com escuta acolhedora, sigilo e praticidade. Cuidado psicológico no seu tempo e no seu espaço. Conecte-se com seu bem-estar.</p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img-container">
+                    <img src="empresarial.png" alt="Atendimento Empresarial">
+                </div>
+                <div class="s-info">
+                    <h3>Atendimento Empresarial</h3>
+                    <p>Atendimento online para empresas com foco em saúde mental e bem-estar. Ações personalizadas para colaboradores com sigilo e flexibilidade. Cuidar da equipe é valorizar o seu negócio.</p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img-container">
+                    <img src="palestra.png" alt="Palestras">
+                </div>
+                <div class="s-info">
+                    <h3>Palestras</h3>
+                    <p>Palestras online sobre saúde mental e bem-estar emocional. Conteúdo acessível, dinâmico e adaptado ao seu público. Informação que inspira cuidado e transformação.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+  <svg viewBox="0 0 1440 320">
+    <path fill="#ffffff" fill-opacity="1"
+      d="M0,192L60,186.7C120,181,240,171,360,181.3C480,192,600,224,720,224C840,224,960,192,1080,170.7C1200,149,1320,139,1380,133.3L1440,128V320H0Z">
+    </path>
+  </svg>
+</div>
+    </section>
+
+    <section id="artigos" class="mental-health" >
+       <div style="text-align: center; width: 100%; margin-bottom: 40px;">
+            <span class="label"><h1>ARTIGOS</h1></span>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <span class=""></span>
+                <img src="depresao.png" alt="Depressão">
+                <h3>Depressão</h3>
+                <p>Depressão é um transtorno mental que causa tristeza profunda, perda de interesse e alterações no sono, apetite e humor. Afeta a vida diária e requer tratamento profissional.</p>
+                <a href="#" class="saiba-mais">saiba mais</a>
+            </div>
+            <div class="info-card">
+                <img src="dep emocional.png" alt="Dependência emocional">
+                <h3>Dependência emocional</h3>
+                <p>É a dificuldade de se sentir bem ou seguro sem a presença ou aprovação de outra pessoa. Pode gerar relacionamentos desequilibrados e sofrimento, sendo importante buscar autoconhecimento.</p>
+                <a href="#" class="saiba-mais">saiba mais</a>
+            </div>
+            <div class="info-card">
+                <img src="ansiedade.png" alt="Ansiedade">
+                <h3>Ansiedade</h3>
+                <p>É uma reação natural do corpo ao estresse, mas quando se torna constante e excessiva, pode afetar a saúde mental. Causa preocupação intensa, agitação, tensão e sintomas físicos.</p>
+                <a href="#" class="saiba-mais">saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section id="depoimentos" class="testimonials-section">
+  <section class="section-testimonials">
+    <h2 class="title">Depoimentos de Pacientes</h2>
+
+    <div class="testimonials-container">
+        <div class="testimonial-card">
+            <div class="card-header">
+                <img src='M.png' class="avatar" alt="Avatar">
+                <div class="user-info">
+                    <span class="name">Manuella Ervilha</span>
+                    <span class="reviews-count">3 avaliações</span>
+                </div>
+                <button class="menu-dots">⋮</button>
+            </div>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="date">10 meses atrás</span>
+            </div>
+            <p class="text">Consultei com a Patrícia por quase um ano. Nesse ano ela me auxiliou a lidar com minhas questões de uma maneira incrível...</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="card-header">
+                <img src='P.png' class="avatar" alt="Avatar">
+                <div class="user-info">
+                    <span class="name">Pollyanna Olivato</span>
+                    <span class="reviews-count">6 avaliações</span>
+                </div>
+                <button class="menu-dots">⋮</button>
+            </div>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="date">9 meses atrás</span>
+            </div>
+            <p class="text">Uma psicóloga muito querida. Atenciosa, leve e sempre tenta ajudar. Busca me dar formas de eu mesma me ajudar...</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="card-header">
+                <img src='A.png' class="avatar" alt="Avatar">
+                <div class="user-info">
+                    <span class="name">Adele Adriano</span>
+                    <span class="reviews-count">6 avaliações</span>
+                </div>
+                <button class="menu-dots">⋮</button>
+            </div>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="date">um ano atrás</span>
+            </div>
+            <p class="text">Minha experiência com a Dra. Patrícia Marques tem sido surpreendente, logo na primeira sessão já gostei muito.</p>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="card-header">
+                <img src='c.png' class="avatar" alt="Avatar">
+                <div class="user-info">
+                    <span class="name">Cristiano Almeida</span>
+                    <span class="reviews-count">1 avaliação</span>
+                </div>
+                <button class="menu-dots">⋮</button>
+            </div>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="date">10 meses atrás</span>
+            </div>
+            <p class="text">Foi muito bacana! A Dra. Patrícia sempre muito atenciosa e com muita competência, me ajudou muito.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contato" class="footer">
+    <div class="footer-container">
+
+        <div class="footer-left">
+
+            <div class="social-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                <a href="https://instagram.com/psipatriciamarques" target="_blank">
+                    @psipatriciamarques
+                </a>
+            </div>
+
+            <div class="social-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <span>(61) 98285-6791</span>
+            </div>
+
+            <div class="social-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+
+                <a href="mailto:psipatimarques@gmail.com" class="email-link">
+                    psipatimarques@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <p>© 2025 Patricia Marques – Psicóloga Clínica</p>
+            <p>(CRP 01/25075) – Todos os Direitos Reservados</p>
+        </div>
+
+    </div>
+</footer>
+
+<a href="https://wa.me/5561982856791?text=Olá! Gostaria de mais informações."
+   class="whatsapp-float"
+   target="_blank">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp"
+         class="whatsapp-icon">
+
+</a>
+<button id="backToTop">↑</button>
+<script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    // Mostra o botão apenas quando o usuário rolar 300px para baixo
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Quando clicar, volta para o topo de forma suave
+    backToTopButton.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+</script>
+</body>
+</html>
