@@ -1306,3 +1306,268 @@ footer a:hover {
 .footer-link i {
     color: white;
 }
+/* ===================================
+   RESPONSIVIDADE GERAL
+=================================== */
+
+/* Evita rolagem horizontal */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Imagens sempre responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .hero,
+    .about,
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin: 0 auto 25px;
+    }
+
+    .hero-illustration,
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .services-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    /* Header */
+    .navbar,
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav ul,
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Hero */
+    .hero,
+    .hero-section,
+    .about,
+    .services,
+    .mental-health,
+    .articles-section,
+    .section-testimonials {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1,
+    .hero-card h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .hero-description,
+    .description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .hero-card {
+        padding: 30px;
+    }
+
+    .hero-illustration,
+    .hero-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Sobre */
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Cards de serviços */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .s-card {
+        flex-direction: column;
+    }
+
+    .s-img-container,
+    .s-info {
+        width: 100%;
+    }
+
+    .s-img-container {
+        height: 220px;
+    }
+
+    /* Saúde Mental */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Depoimentos */
+    .testimonials-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+
+    /* Artigos */
+    .articles-container,
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-card,
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .article-card {
+        flex-direction: column;
+    }
+
+    .article-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    /* Botões */
+    .btn-primary,
+    .btn-nav,
+    .btn-agendar {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Logo */
+    .logo {
+        justify-content: center;
+    }
+
+    .logo-text {
+        text-align: left;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .whatsapp-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Voltar ao topo */
+    #backToTop {
+        right: 15px;
+        bottom: 85px;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    .hero-content h1,
+    .hero-card h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .testimonial-card,
+    .card,
+    .info-card {
+        padding: 20px;
+    }
+
+    .navbar,
+    header {
+        padding: 12px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text .name {
+        font-size: 0.9rem;
+    }
+
+    .logo-text small {
+        font-size: 0.75rem;
+    }
+}
