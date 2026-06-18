@@ -741,7 +741,7 @@ nav ul li a:hover {
 
 /* Estilo específico do botão "Agendar" */
 .btn-nav {
-    background-color: #4a76a8; /* Azul sóbrio */
+   background: linear-gradient(135deg, #6fbf73, #4a7c59);
     color: white !important;
     padding: 10px 20px;
     border-radius: 25px;
@@ -1570,4 +1570,33 @@ img {
     .logo-text small {
         font-size: 0.75rem;
     }
+}
+.btn-artigo{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #1f4b7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-artigo:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(31,75,122,0.3);
+}
+.btn-artigo{
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 12px 28px;
+    background: linear-gradient(135deg,#1f4b7a,#356aa0);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all .3s ease;
 }
