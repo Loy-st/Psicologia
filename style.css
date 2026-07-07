@@ -5,9 +5,9 @@
 :root{
     --azul-fundo:#f4f9ff;
     --azul-hover:#eef6ff;
-    --azul-primario:#4a77a5;
+    --azul-primario:#1d3c5c;
     --azul-dark:#1a3a5a;
-    --texto:#555;
+    --texto:#0f0202;
     --branco:#fff;
     --verde:#6fbf73;
     --verde-dark:#4a7c59;
@@ -150,12 +150,17 @@ HERO
     background:linear-gradient(135deg,#f5f7fa,#e4efe9);
 }
 
-.hero-content{
+
+   .hero-content{
     flex:1;
-    background:rgba(255,255,255,.65);
-    backdrop-filter:blur(10px);
-    padding:35px;
-    border-radius:20px;
+    position:relative;
+    z-index:1;
+
+    background:transparent;
+    backdrop-filter:none;
+
+    padding:0;
+    border-radius:0;
 }
 
 .hero-content h1{
@@ -393,22 +398,36 @@ SOBRE
     line-height:1.7;
     flex:1;
 }
-
 .btn-artigo{
-    display:inline-block;
-    margin:25px auto;
-    padding:12px 28px;
-    background:linear-gradient(135deg,#1f4b7a,#356aa0);
-    color:#fff;
-    border-radius:40px;
-    transition:.3s;
+    display: inline-block;
+    margin-top: 20px;
+    align-self: center;
+
+    padding: 12px 28px;
+    background: linear-gradient(135deg,#1f4b7a,#356aa0);
+    color: #fff;
+    border-radius: 40px;
+    transition: .3s;
+
 }
 
 .btn-artigo:hover{
     transform:translateY(-3px);
     box-shadow:0 8px 20px rgba(31,75,122,.30);
 }
+.s-info{
+ width: 62%;
+    padding: 25px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   } 
+
+.btn-artigo{
+    margin-top: auto;
+    align-self: center;
+}
 /* =====================================
    RESPONSIVIDADE DOS SERVIÇOS
 ===================================== */
@@ -970,4 +989,31 @@ UTILITÁRIOS
 .mb-40{
     margin-bottom:40px;
 }
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
 
+    min-height: 100vh;
+
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}

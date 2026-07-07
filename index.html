@@ -1,6 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background: url("image.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+    <style>
+        /* Estilo para ocupar a tela inteira com a imagem */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .fundo-psicologia {
+            /* Insira o link da imagem aqui ou o caminho do arquivo local */
+            background-image: url('http://googleusercontent.com/image_generation_content/1');
+            
+            /* Propriedades essenciais para o background */
+            background-size: cover;       /* Faz a imagem cobrir toda a área sem distorcer */
+            background-position: center;   /* Centraliza a imagem na tela */
+            background-repeat: no-repeat;  /* Impede que a imagem fique se repetindo */
+            background-attachment: fixed;  /* Cria um efeito bonito de fundo fixo ao rolar a página */
+            
+            /* Ajusta a altura para ocupar 100% da tela visível */
+            height: 100vh; 
+            
+            /* Alinha o texto do site no centro (opcional) */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Um efeito de sombra para destacar o texto sobre a imagem */
+        .conteudo {
+            background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
     
     <style>
 body {
@@ -8,6 +59,8 @@ body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
     line-height: 1.6;
+     background: url("flor.png") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .hero {
@@ -66,6 +119,7 @@ body {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrícia Marques | Psicologia Online</title>
+    
      <link rel="icon" type="image/png" href="logo2.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -95,24 +149,22 @@ body {
         
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Psicologia Online</h1>
-            <p class="hero-tagline">Especialista em <strong>Teoria Cognitivo-Comportamental</strong></p>
-            <p class="hero-description">
-                Você merece ser ouvido com empatia e respeito. No espaço terapêutico que construiremos juntos, 
-                suas dores terão lugar, sem críticas nem julgamentos. Por meio de um cuidado psicológico atento 
-                e de uma relação de confiança, vamos trabalhar para que você encontre alívio, clareza e forças 
-                para lidar com os desafios da sua vida emocional.
-            </p>
-            <div class="hero-btns">
-                <a href="https://wa.me/5561982856791" class="btn-primary">Agende sua consulta</a>
-            </div>
-            <p class="hero-footer-text">Atendimento para Adultos, Casais e Grupos.</p>
+   <section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Psicologia Online</h1>
+        <p class="hero-tagline">Especialista em <strong>Teoria Cognitivo-Comportamental</strong></p>
+        <p class="hero-description">
+            Você merece ser ouvido com empatia e respeito. No espaço terapêutico que construiremos juntos, 
+            suas dores terão lugar, sem críticas nem julgamentos. Por meio de um cuidado psicológico atento 
+            e de uma relação de confiança, vamos trabalhar para que você encontre alívio, clareza e forças 
+            para lidar com os desafios da sua vida emocional.
+        </p>
+        <div class="hero-btns">
+            <a href="https://wa.me/5561982856791" class="btn-primary">Agende sua consulta</a>
         </div>
-        <img src="flor.png" alt="Ilustração floral decorativa">
-    </section>
-
+        <p class="hero-footer-text">Atendimento para Adultos, Casais e Grupos.</p>
+    </div>
+</section>
     <section id="sobre" class="about">
         <div class="about-text">
             <span class="label"></span>
@@ -183,32 +235,71 @@ body {
   </svg>
 </div>
     <section id="artigos" class="mental-health">
-    <div style="text-align: center; width: 100%; margin-bottom: 40px;">
+
+    <div style="text-align:center; margin-bottom:40px;">
         <span class="label"><h1>ARTIGOS</h1></span>
     </div>
-    
-    <div class="info-grid">
-        <div class="info-card">
-            <img src="depresao.png" alt="Depressão">
-            <h3>Depressão</h3>
-            <p>Depressão é um transtorno mental que causa tristeza profunda, perda de interesse e alterações no sono, apetite e humor. Afeta a vida diária e requer tratamento profissional.</p>
+
+    <div class="services-grid">
+
+        <!-- Artigo 1 -->
+        <div class="s-card">
+            <div class="s-img-container">
+                <img src="depresao.png" alt="Depressão">
+            </div>
+
+            <div class="s-info">
+                <h3>Depressão</h3>
+                <p>
+                    Depressão é um transtorno mental que causa tristeza profunda,
+                    perda de interesse e alterações no sono, apetite e humor.
+                    Afeta a vida diária e requer tratamento profissional.
+                </p>
+            </div>
         </div>
 
-        <div class="info-card">
-            <img src="dep emocional.png" alt="Dependência emocional">
-            <h3>Dependência emocional</h3>
-            <p>É a dificuldade de se sentir bem ou seguro sem a presença ou aprovação de outra pessoa. Pode gerar relacionamentos desequilibrados e sofrimento, sendo importante buscar autoconhecimento.</p>
+        <!-- Artigo 2 -->
+        <div class="s-card">
+            <div class="s-img-container">
+                <img src="dep emocional.png" alt="Dependência emocional">
+            </div>
+
+            <div class="s-info">
+                <h3>Dependência emocional</h3>
+                <p>
+                    É a dificuldade de se sentir bem ou seguro sem a presença
+                    ou aprovação de outra pessoa. Pode gerar relacionamentos
+                    desequilibrados e sofrimento.
+                </p>
+            </div>
         </div>
 
-        <div class="info-card">
-            <img src="Marques.jpeg" alt="Artigo de Patrícia Marques">
-            <h3>Artigo Científico</h3>
-            <p>Conheça o artigo científico desenvolvido por Patrícia Marques, abordando temas relacionados à saúde mental, acolhimento psicológico e bem-estar emocional. Clique abaixo para acessar o conteúdo completo.</p>
-            <a href="https://doi.org/10.23900/2359-1552v14n1-100-2025" class="btn-artigo" target="_blank">
-                Ler artigo completo →
-            </a>
+        <!-- Artigo 3 -->
+        <div class="s-card">
+            <div class="s-img-container">
+                <img src="Marques.jpeg" alt="Artigo Científico">
+            </div>
+
+            <div class="s-info">
+                <h3>Artigo Científico</h3>
+
+                <p>
+                    Conheça o artigo científico desenvolvido por Patrícia Marques,
+                    abordando temas relacionados à saúde mental e acolhimento psicológico.
+                </p>
+
+                <a href="https://doi.org/10.23900/2359-1552v14n1-100-2025"
+                   class="btn-artigo"
+                   target="_blank">
+                    Ler artigo completo →
+                </a>
+
+            </div>
         </div>
+
     </div>
+
+</section>
 </section>
     
             </div>
